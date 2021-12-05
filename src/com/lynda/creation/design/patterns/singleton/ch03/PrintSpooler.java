@@ -14,7 +14,7 @@ public class PrintSpooler {
         // Some initialization code for print spooler
     }
 
-    public static PrintSpooler getInstance() {
+    public static synchronized PrintSpooler getInstance() {
         if (initialized) {
             return SPOOLER;
         }
