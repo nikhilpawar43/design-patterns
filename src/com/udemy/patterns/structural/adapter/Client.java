@@ -12,6 +12,13 @@ public class Client {
         String cardDesign = cardDesigner.designCard(employeeClassAdapter);
         System.out.println(cardDesign);
 
+        System.out.println("\n");
+
+        populateEmailDetails(employee);
+        EmployeeObjectAdapter employeeObjectAdapter = new EmployeeObjectAdapter(employee);
+        cardDesign = cardDesigner.designCard(employeeObjectAdapter);
+        System.out.println(cardDesign);
+
     }
 
     private static void populateEmailDetails(Employee employee) {
