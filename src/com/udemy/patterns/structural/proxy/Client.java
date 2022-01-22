@@ -14,5 +14,12 @@ public class Client {
         System.out.println("Rending image now");
 
         bitmapImage.render();
+
+        System.out.println("*******************");
+        Image imageWithDynamicProxy = (Image) ImageFactory.getImageWithDynamicProxy("a1.bmp");
+        imageWithDynamicProxy.setLocation(new Point2D(20, 152));
+        System.out.println("Image location: " + imageWithDynamicProxy.getLocation());
+        System.out.println("Rending image now");
+        imageWithDynamicProxy.render();
     }
 }
